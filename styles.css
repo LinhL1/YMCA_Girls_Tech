@@ -1,0 +1,194 @@
+/* Import Pixel Fonts */
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Silkscreen&display=swap");
+
+/* General Page Style */
+body {
+  font-family: "VT323", monospace; /* readable pixel style */
+  background: #fdfcf7; /* soft cream */
+  color: #3c3c3b;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px; /* VT323 looks best larger */
+  line-height: 1.6;
+}
+/* background for home page */
+#bodyHome {
+  background-image: url("assets/background.jpg");
+  background-repeat: no-repeat; /* prevents tiling */
+  background-size: contain;
+}
+#bodyAbout {
+  background-image: url("assets/about.jpg");
+  background-repeat: no-repeat; /* prevents tiling */
+  background-size: contain;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(255, 255, 255, 0.263);
+  z-index: -1; /* keep it behind text */
+}
+main {
+  background-image: url("assets/pixelGhost.jpg");
+  background-repeat: no-repeat; /* prevents tiling */
+  background-size: contain;
+}
+/* Main Title */
+h1 {
+  font-family: "Silkscreen", sans-serif; /* cute blocky pixel font */
+  color: #49096d; /* earthy sage */
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Paragraph / Intro */
+p {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #444;
+  background: #fffbea; /* pastel yellow */
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Titles */
+h2 {
+  font-family: "Silkscreen", sans-serif;
+  color: #ff04c4; /* soft sage-gray */
+  margin-top: 40px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* Fun Facts List */
+li {
+  list-style: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  padding: 8px;
+  background: #e6d9ef; /* pale green */
+  border-radius: 4px;
+  display: inline-block;
+  width: 60%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Image Container */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.image-gallery img {
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 200px;
+  height: auto;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Nav */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #f6f8e7;
+  padding: 1rem;
+}
+
+nav a {
+  font-family: "Silkscreen", sans-serif;
+  text-decoration: none;
+  color: #3b3b3b;
+  font-size: 0.9rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+nav a:hover {
+  color: #fff; /* change text color too */
+  transform: scale(1.05);
+}
+nav li:hover {
+  background-color: #b5dcc1;
+  color: #fff; /* change text color too */
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer p {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  font-size: 1.5rem;
+  color: #555;
+  font-family: "VT323", monospace;
+}
+footer {
+  margin-top: 100px;
+}
+
+/* Outcomes Section */
+.outcomes {
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.outcome-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.outcome-list li,
+.goals-list li {
+  text-align: center;
+  background: #b5dcc1;
+  padding: 10px 15px;
+  border-radius: 4px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  font-size: 1.5rem;
+  font-family: "VT323", monospace;
+}
+
+/* Goals Section */
+.goals {
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.goals-list li {
+  background: #edcde1;
+}
+
+#sampleWeeks {
+  color: #67d69b;
+}
+
+/* highlights section */
+.highlights {
+  margin-top: 250px;
+}

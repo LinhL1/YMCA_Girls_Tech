@@ -30,7 +30,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 1000px;
-  background-color: rgba(255, 255, 255, 0.263);
+  background-color: rgba(255, 255, 255, 0.208);
   z-index: -1; /* keep it behind text */
 }
 main {
@@ -41,12 +41,17 @@ main {
 /* Main Title */
 h1 {
   font-family: "Silkscreen", sans-serif; /* cute blocky pixel font */
-  color: #49096d; /* earthy sage */
-  font-size: 3rem;
+  color: #2eb7d3; /* earthy sage */
+  font-size: 3.5rem;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-
+.header {
+  background: #fffbea;
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: inline-block; /* keeps the box only as wide as the text */
+}
 /* Paragraph / Intro */
 p {
   max-width: 700px;
@@ -63,9 +68,9 @@ p {
 /* Section Titles */
 h2 {
   font-family: "Silkscreen", sans-serif;
-  color: #ff04c4; /* soft sage-gray */
+  color: #f500c4; /* soft sage-gray */
   margin-top: 40px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -75,7 +80,7 @@ li {
   font-size: 1.5rem;
   margin: 10px 0;
   padding: 8px;
-  background: #e6d9ef; /* pale green */
+  background: #edd3ff;
   border-radius: 4px;
   display: inline-block;
   width: 60%;
@@ -105,6 +110,10 @@ li {
 }
 
 /* Nav */
+.navText {
+  background: #500060;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -112,14 +121,13 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  background-color: #f6f8e7;
   padding: 1rem;
 }
 
 nav a {
   font-family: "Silkscreen", sans-serif;
   text-decoration: none;
-  color: #3b3b3b;
+  color: #f9f3f3;
   font-size: 0.9rem;
   transition: color 0.3s ease, transform 0.2s ease;
 }
@@ -128,9 +136,9 @@ nav a:hover {
   transform: scale(1.05);
 }
 nav li:hover {
-  background-color: #b5dcc1;
-  color: #fff; /* change text color too */
   transform: scale(1.05);
+  background-color: #ceb5dc;
+  color: #fff; /* change text color too */
 }
 
 /* Footer */
@@ -190,5 +198,5 @@ footer {
 
 /* highlights section */
 .highlights {
-  margin-top: 250px;
+  margin-top: 300px;
 }
